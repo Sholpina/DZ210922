@@ -21,7 +21,7 @@ for i in range(0, len(data)):
         dt= json.load(data_dict)
         data_from_folders.append(dt)
 print(data_from_folders)
-print((f'Saved file {filename}'))
+        print((f'Saved file {filename}'))
 print("Datatype after de-serialisation: " + str(type(dt)))
 
 
