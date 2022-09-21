@@ -17,8 +17,8 @@ for k, value in enumerate(data):
 data_from_folders = []
 for i in range(0, len(data)):
         filename = f'files/data.json{i}'
-        data_dict= open(filename)    #deserialization
-        dt= json.load(data_dict)
+        data_dict= open(filename)    
+        dt= json.load(data_dict)      #deserialization
         data_from_folders.append(dt)
         print((f'Saved file {filename}'))
 print("Datatype after de-serialisation: " + str(type(dt)))
